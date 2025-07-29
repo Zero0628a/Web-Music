@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comunidad - BeatForge Studio</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Conecta con más de 50,000 productores, colabora en proyectos y comparte tu música en la comunidad más vibrante de productores profesionales." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fbeatforge2473back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 w-full z-50 bg-primary/90 backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-accent" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4L36 12V28L20 36L4 28V12L20 4Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                        <path d="M14 20H26M20 14V26" stroke="#0A0A0A" stroke-width="2"/>
+                    </svg>
+                    <span class="ml-3 text-xl font-bold text-gradient">BeatForge Studio</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-text-primary transition-colors duration-200 px-3 py-2 rounded-md">Inicio</a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200 px-3 py-2 rounded-md">Masterclasses</a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200 px-3 py-2 rounded-md">Artistas</a>
+                        <a href="community_page.html" class="text-accent font-medium px-3 py-2 rounded-md">Comunidad</a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200 px-3 py-2 rounded-md">Recursos</a>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="text-text-secondary hover:text-text-primary transition-colors duration-200">Iniciar Sesión</button>
+                    <button class="btn-primary">Comenzar Gratis</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-text-secondary hover:text-text-primary p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-16 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-primary"></div>
+        <div class="absolute inset-0">
+            <img src="../assets/images/Captura_de_pantalla_2025-07-28_103711-1753792088854.png" alt="Community Hero" class="w-full h-full object-cover opacity-20" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    Únete a la <span class="text-gradient">Comunidad</span> más vibrante
+                </h1>
+                <p class="text-xl md:text-2xl text-text-secondary mb-8 max-w-4xl mx-auto">
+                    Conecta con más de 50,000 productores, colabora en proyectos épicos y comparte tu pasión por la música electrónica
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="btn-primary text-lg px-8 py-4 studio-glow">
+                        Unirse a la Comunidad
+                    </button>
+                    <button class="btn-secondary text-lg px-8 py-4">
+                        Explorar Eventos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Stats -->
+    <section class="py-12 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-accent mb-2">50K+</div>
+                    <p class="text-text-secondary">Productores Activos</p>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-success mb-2">1.2M</div>
+                    <p class="text-text-secondary">Tracks Compartidos</p>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-accent mb-2">25K</div>
+                    <p class="text-text-secondary">Colaboraciones</p>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-success mb-2">180</div>
+                    <p class="text-text-secondary">Países</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Community Content -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Left Sidebar - Navigation & Profile -->
+                <div class="lg:col-span-1">
+                    <div class="card sticky top-24">
+                        <div class="text-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=150&auto=format&fit=crop" alt="Tu Perfil" class="w-20 h-20 rounded-full mx-auto mb-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150'; this.onerror=null;" />
+                            <h3 class="text-xl font-bold mb-2">Tu Estudio</h3>
+                            <p class="text-text-secondary text-sm mb-4">Productor • Madrid, España</p>
+                            <div class="flex justify-center space-x-4 text-sm">
+                                <div class="text-center">
+                                    <div class="font-bold text-accent">23</div>
+                                    <div class="text-text-secondary">Tracks</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="font-bold text-success">156</div>
+                                    <div class="text-text-secondary">Seguidores</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="font-bold text-accent">89</div>
+                                    <div class="text-text-secondary">Siguiendo</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav class="space-y-2">
+                            <a href="#activity" class="flex items-center space-x-3 p-3 rounded-lg bg-accent/10 text-accent">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                                </svg>
+                                <span>Feed de Actividad</span>
+                            </a>
+                            <a href="#collaboration" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-surface text-text-secondary hover:text-text-primary transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zM4 18v-4h3v4h2v-7.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5V18h2v-4h3v4h2V9.5c0-1.38-1.12-2.5-2.5-2.5h-9C4.12 7 3 8.12 3 9.5V18h1z"/>
+                                </svg>
+                                <span>Colaboraciones</span>
+                            </a>
+                            <a href="#feedback" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-surface text-text-secondary hover:text-text-primary transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/>
+                                </svg>
+                                <span>Feedback & Reviews</span>
+                            </a>
+                            <a href="#challenges" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-surface text-text-secondary hover:text-text-primary transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                                </svg>
+                                <span>Desafíos</span>
+                            </a>
+                            <a href="#forums" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-surface text-text-secondary hover:text-text-primary transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h11c.55 0 1-.45 1-1z"/>
+                                </svg>
+                                <span>Foros</span>
+                            </a>
+                            <a href="#live" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-surface text-text-secondary hover:text-text-primary transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <span>En Vivo</span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="lg:col-span-2">
+                    
+                    <!-- Activity Feed -->
+                    <div id="activity" class="mb-12">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-2xl font-bold">Feed de Actividad</h2>
+                            <div class="flex space-x-2">
+                                <button class="px-4 py-2 bg-accent text-primary rounded-lg text-sm font-medium">Todos</button>
+                                <button class="px-4 py-2 bg-surface text-text-secondary rounded-lg text-sm hover:bg-secondary transition-colors">Siguiendo</button>
+                            </div>
+                        </div>
+
+                        <!-- Post Creation -->
+                        <div class="card mb-6">
+                            <div class="flex items-start space-x-4">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=50&auto=format&fit=crop" alt="Tu Avatar" class="w-12 h-12 rounded-full" loading="lazy" />
+                                <div class="flex-1">
+                                    <textarea class="w-full bg-secondary border border-border rounded-lg p-3 text-text-primary placeholder-text-secondary resize-none" rows="3" placeholder="Comparte tu último track, pregunta algo o inicia una colaboración..."></textarea>
+                                    <div class="flex items-center justify-between mt-3">
+                                        <div class="flex space-x-3">
+                                            <button class="text-text-secondary hover:text-accent transition-colors">
+                                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                                </svg>
+                                            </button>
+                                            <button class="text-text-secondary hover:text-accent transition-colors">
+                                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button class="btn-primary text-sm px-6 py-2">Publicar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Activity Posts -->
+                        <div class="space-y-6">
+                            <!-- Track Release Post -->
+                            <div class="card hover:studio-glow transition-all duration-300">
+                                <div class="flex items-start space-x-4">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=50&auto=format&fit=crop" alt="Carlos Mendoza" class="w-12 h-12 rounded-full" loading="lazy" />
+                                    <div class="flex-1">
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <h3 class="font-semibold">Carlos Mendoza</h3>
+                                            <span class="text-text-secondary text-sm">• hace 2 horas</span>
+                                            <span class="bg-success/20 text-success px-2 py-1 rounded-full text-xs">Nuevo Track</span>
+                                        </div>
+                                        <p class="text-text-secondary mb-4">¡Acabo de lanzar mi nuevo progressive house track "Midnight Echoes"! Después de 3 meses en el estudio, por fin está listo. ¿Qué os parece?</p>
+                                        
+                                        <!-- Embedded Audio Player -->
+                                        <div class="bg-secondary rounded-lg p-4 mb-4">
+                                            <div class="flex items-center space-x-4">
+                                                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=80&auto=format&fit=crop" alt="Track Cover" class="w-16 h-16 rounded-lg" loading="lazy" />
+                                                <div class="flex-1">
+                                                    <h4 class="font-semibold mb-1">Midnight Echoes</h4>
+                                                    <p class="text-text-secondary text-sm mb-2">Carlos Mendoza • Progressive House</p>
+                                                    <div class="flex items-center space-x-2">
+                                                        <button class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
+                                                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                                                <path d="M8 5v14l11-7z"/>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="flex-1 bg-border rounded-full h-2">
+                                                            <div class="bg-accent h-2 rounded-full w-1/3"></div>
+                                                        </div>
+                                                        <span class="text-xs text-text-secondary">1:23 / 6:45</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Waveform Visualization -->
+                                        <div class="bg-secondary rounded-lg p-3 mb-4">
+                                            <svg class="w-full h-16" viewBox="0 0 400 60" preserveAspectRatio="none">
+                                                <defs>
+                                                    <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                        <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:0.8"/>
+                                                        <stop offset="100%" style="stop-color:#00D4FF;stop-opacity:0.8"/>
+                                                    </linearGradient>
+                                                </defs>
+                                                <path d="M0,30 Q20,10 40,30 T80,30 T120,30 T160,30 T200,30 T240,30 T280,30 T320,30 T360,30 T400,30" stroke="url(#waveGradient1)" stroke-width="2" fill="none"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="flex items-center justify-between text-text-secondary">
+                                            <div class="flex space-x-6">
+                                                <button class="flex items-center space-x-2 hover:text-accent transition-colors">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                                    </svg>
+                                                    <span>247</span>
+                                                </button>
+                                                <button class="flex items-center space-x-2 hover:text-success transition-colors">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h11c.55 0 1-.45 1-1z"/>
+                                                    </svg>
+                                                    <span>43</span>
+                                                </button>
+                                                <button class="flex items-center space-x-2 hover:text-accent transition-colors">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.50-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                                                    </svg>
+                                                    <span>Compartir</span>
+                                                </button>
+                                            </div>
+                                            <div class="flex items-center space-x-2">
+                                                <span class="text-xs">12.5K reproducciones</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Collaboration Request Post -->
+                            <div class="card hover:electric-glow transition-all duration-300">
+                                <div class="flex items-start space-x-4">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=50&auto=format&fit=crop" alt="Sofia Rodriguez" class="w-12 h-12 rounded-full" loading="lazy" />
+                                    <div class="flex-1">
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <h3 class="font-semibold">Sofia Rodriguez</h3>
+                                            <span class="text-text-secondary text-sm">• hace 5 horas</span>
+                                            <span class="bg-success/20 text-success px-2 py-1 rounded-full text-xs">Colaboración</span>
+                                        </div>
+                                        <p class="text-text-secondary mb-4">Busco vocalists para mi próximo project de deep house. El track ya está 90% terminado, solo necesita esas voces perfectas. ¿Alguien interesado?</p>
+                                        
+                                        <div class="flex flex-wrap gap-2 mb-4">
+                                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Deep House</span>
+                                            <span class="bg-success/20 text-success px-3 py-1 rounded-full text-sm">Vocal Needed</span>
+                                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Professional</span>
+                                        </div>
+
+                                        <div class="flex items-center justify-between text-text-secondary">
+                                            <div class="flex space-x-6">
+                                                <button class="flex items-center space-x-2 hover:text-accent transition-colors">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                                    </svg>
+                                                    <span>89</span>
+                                                </button>
+                                                <button class="flex items-center space-x-2 hover:text-success transition-colors">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h11c.55 0 1-.45 1-1z"/>
+                                                    </svg>
+                                                    <span>15</span>
+                                                </button>
+                                            </div>
+                                            <button class="btn-primary text-sm px-4 py-2">Colaborar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Achievement Post -->
+                            <div class="card hover:studio-glow transition-all duration-300">
+                                <div class="flex items-start space-x-4">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=50&auto=format&fit=crop" alt="Alex Chen" class="w-12 h-12 rounded-full" loading="lazy" />
+                                    <div class="flex-1">
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <h3 class="font-semibold">Alex Chen</h3>
+                                            <span class="text-text-secondary text-sm">• hace 1 día</span>
+                                            <span class="bg-accent/20 text-accent px-2 py-1 rounded-full text-xs">Logro</span>
+                                        </div>
+                                        <p class="text-text-secondary mb-4">¡Increíble! Mi track "Neon Dreams" acaba de superar 1M de streams en Spotify. Gracias a toda la comunidad de BeatForge por el feedback durante el proceso de producción 🎉</p>
+                                        
+                                        <div class="bg-secondary rounded-lg p-4 mb-4">
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h4 class="font-semibold text-accent mb-1">Milestone Alcanzado</h4>
+                                                    <p class="text-text-secondary text-sm">1,000,000 streams en Spotify</p>
+                                                </div>
+                                                <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center">
+                                                    <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-center justify-between text-text-secondary">
+                                            <div class="flex space-x-6">
+                                                <button class="flex items-center space-x-2 hover:text-accent transition-colors">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                                    </svg>
+                                                    <span>312</span>
+                                                </button>
+                                                <button class="flex items-center space-x-2 hover:text-success transition-colors">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h11c.55 0 1-.45 1-1z"/>
+                                                    </svg>
+                                                    <span>67</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Collaboration Hub -->
+                    <div id="collaboration" class="mb-12">
+                        <h2 class="text-2xl font-bold mb-6">Hub de Colaboración</h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Active Collaborations -->
+                            <div class="card">
+                                <h3 class="text-lg font-semibold mb-4 flex items-center">
+                                    <svg class="w-5 h-5 mr-2 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zM4 18v-4h3v4h2v-7.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5V18h2v-4h3v4h2V9.5c0-1.38-1.12-2.5-2.5-2.5h-9C4.12 7 3 8.12 3 9.5V18h1z"/>
+                                    </svg>
+                                    Colaboraciones Activas
+                                </h3>
+                                
+                                <div class="space-y-4">
+                                    <div class="flex items-center justify-between p-3 bg-secondary rounded-lg">
+                                        <div class="flex items-center space-x-3">
+                                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=40&auto=format&fit=crop" alt="Colaborador" class="w-10 h-10 rounded-full" loading="lazy" />
+                                            <div>
+                                                <h4 class="font-medium">Remix Project</h4>
+                                                <p class="text-text-secondary text-sm">con Carlos M.</p>
+                                            </div>
+                                        </div>
+                                        <span class="bg-success/20 text-success px-2 py-1 rounded-full text-xs">En Progreso</span>
+                                    </div>
+
+                                    <div class="flex items-center justify-between p-3 bg-secondary rounded-lg">
+                                        <div class="flex items-center space-x-3">
+                                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=40&auto=format&fit=crop" alt="Colaborador" class="w-10 h-10 rounded-full" loading="lazy" />
+                                            <div>
+                                                <h4 class="font-medium">Vocal EP</h4>
+                                                <p class="text-text-secondary text-sm">con Sofia R.</p>
+                                            </div>
+                                        </div>
+                                        <span class="bg-accent/20 text-accent px-2 py-1 rounded-full text-xs">Revisión</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Find Collaborators -->
+                            <div class="card">
+                                <h3 class="text-lg font-semibold mb-4 flex items-center">
+                                    <svg class="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                                    </svg>
+                                    Buscar Colaboradores
+                                </h3>
+                                
+                                <div class="space-y-3 mb-4">
+                                    <input type="text" placeholder="Buscar por género, habilidad..." class="input-field w-full" />
+                                    <div class="flex flex-wrap gap-2">
+                                        <button class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Techno</button>
+                                        <button class="px-3 py-1 bg-success/20 text-success rounded-full text-sm">House</button>
+                                        <button class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Trance</button>
+                                    </div>
+                                </div>
+                                
+                                <button class="btn-primary w-full">Buscar Colaboradores</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track Feedback Exchange -->
+                    <div id="feedback" class="mb-12">
+                        <h2 class="text-2xl font-bold mb-6">Intercambio de Feedback</h2>
+                        
+                        <div class="card">
+                            <div class="flex items-center justify-between mb-6">
+                                <h3 class="text-lg font-semibold">Tracks Esperando Feedback</h3>
+                                <button class="btn-secondary text-sm px-4 py-2">Subir Track</button>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-4 p-4 bg-secondary rounded-lg">
+                                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=60&auto=format&fit=crop" alt="Track Cover" class="w-15 h-15 rounded-lg" loading="lazy" />
+                                    <div class="flex-1">
+                                        <h4 class="font-medium mb-1">Deep Reflections (WIP)</h4>
+                                        <p class="text-text-secondary text-sm mb-2">Subido por Marina K. • Deep House</p>
+                                        <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                                            <span>4:23</span>
+                                            <span>•</span>
+                                            <span>12 reviews</span>
+                                            <span>•</span>
+                                            <span class="text-accent">4.2★</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <button class="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z"/>
+                                            </svg>
+                                        </button>
+                                        <button class="btn-secondary text-sm px-4 py-2">Review</button>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center space-x-4 p-4 bg-secondary rounded-lg">
+                                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=60&auto=format&fit=crop" alt="Track Cover" class="w-15 h-15 rounded-lg" loading="lazy" />
+                                    <div class="flex-1">
+                                        <h4 class="font-medium mb-1">Cosmic Journey v2</h4>
+                                        <p class="text-text-secondary text-sm mb-2">Subido por David L. • Progressive Trance</p>
+                                        <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                                            <span>7:45</span>
+                                            <span>•</span>
+                                            <span>8 reviews</span>
+                                            <span>•</span>
+                                            <span class="text-success">4.7★</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <button class="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z"/>
+                                            </svg>
+                                        </button>
+                                        <button class="btn-secondary text-sm px-4 py-2">Review</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monthly Challenge -->
+                    <div id="challenges" class="mb-12">
+                        <h2 class="text-2xl font-bold mb-6">Desafío del Mes</h2>
+                        
+                        <div class="card">
+                            <div class="flex items-start space-x-4 mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-br from-accent to-success rounded-xl flex items-center justify-center">
+                                    <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold mb-2">Progressive Journey Challenge</h3>
+                                    <p class="text-text-secondary mb-4">Crea un track progressive de mínimo 6 minutos que cuente una historia emocional. Jurado especial: Armin van Buuren.</p>
+                                    <div class="flex items-center space-x-6 text-sm">
+                                        <div class="flex items-center space-x-2">
+                                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                            </svg>
+                                            <span>89 participantes</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                            </svg>
+                                            <span>Premio: €2,500</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                                            </svg>
+                                            <span>14 días restantes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex space-x-4">
+                                <button class="btn-primary flex-1">Participar</button>
+                                <button class="btn-secondary">Ver Reglas</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Sessions -->
+    <section id="live" class="py-20 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Sesiones en Vivo</h2>
+                <p class="text-xl text-text-secondary">Conecta en tiempo real con productores de todo el mundo</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Live Studio Session -->
+                <div class="card">
+                    <div class="relative mb-4">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=600&auto=format&fit=crop" alt="Live Session" class="w-full h-48 object-cover rounded-lg" loading="lazy" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-error px-3 py-1 rounded-full text-sm font-medium flex items-center">
+                                <span class="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
+                                EN VIVO
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 bg-primary/80 backdrop-blur-sm rounded-lg px-3 py-1">
+                            <span class="text-sm font-medium">1,247 espectadores</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Studio Session: Techno Vibes</h3>
+                    <p class="text-text-secondary mb-4">DJ Snake está produciendo live su próximo banger techno. Únete y pregunta lo que quieras sobre producción.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=40&auto=format&fit=crop" alt="DJ Snake" class="w-8 h-8 rounded-full" loading="lazy" />
+                            <span class="text-sm font-medium">DJ Snake</span>
+                        </div>
+                        <button class="btn-primary text-sm px-6 py-2">Unirse</button>
+                    </div>
+                </div>
+
+                <!-- Upcoming Session -->
+                <div class="card">
+                    <div class="relative mb-4">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=600&auto=format&fit=crop" alt="Upcoming Session" class="w-full h-48 object-cover rounded-lg opacity-60" loading="lazy" />
+                        <div class="absolute inset-0 bg-primary/40"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold mb-2">02:15:30</div>
+                                <div class="text-sm">Próxima sesión</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Masterclass: Mixing Secrets</h3>
+                    <p class="text-text-secondary mb-4">Martin Garrix compartirá sus técnicas de mezcla más guardadas en una sesión interactiva exclusiva.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=40&auto=format&fit=crop" alt="Martin Garrix" class="w-8 h-8 rounded-full" loading="lazy" />
+                            <span class="text-sm font-medium">Martin Garrix</span>
+                        </div>
+                        <button class="btn-secondary text-sm px-6 py-2">Recordar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-time Chat -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <div class="relative">
+            <button id="chatToggle" class="w-14 h-14 bg-accent rounded-full flex items-center justify-center shadow-elevated hover:studio-glow transition-all duration-300">
+                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h11c.55 0 1-.45 1-1z"/>
+                </svg>
+            </button>
+            <div class="absolute top-0 right-0 w-3 h-3 bg-success rounded-full animate-pulse"></div>
+        </div>
+        
+        <!-- Chat Window (Hidden by default) -->
+        <div id="chatWindow" class="absolute bottom-16 right-0 w-80 h-96 bg-primary border border-border rounded-lg shadow-elevated hidden">
+            <div class="flex items-center justify-between p-4 border-b border-border">
+                <h3 class="font-semibold">Chat Comunidad</h3>
+                <div class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-success rounded-full"></div>
+                    <span class="text-sm text-text-secondary">234 online</span>
+                </div>
+            </div>
+            
+            <div class="flex-1 p-4 space-y-3 overflow-y-auto h-64">
+                <div class="flex items-start space-x-2">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=30&auto=format&fit=crop" alt="User" class="w-6 h-6 rounded-full" loading="lazy" />
+                    <div>
+                        <div class="text-xs text-text-secondary">Carlos M.</div>
+                        <div class="text-sm">¿Alguien sabe de buenos plugins de reverb?</div>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-2">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=30&auto=format&fit=crop" alt="User" class="w-6 h-6 rounded-full" loading="lazy" />
+                    <div>
+                        <div class="text-xs text-text-secondary">Sofia R.</div>
+                        <div class="text-sm">FabFilter Pro-R es increíble!</div>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-2">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=30&auto=format&fit=crop" alt="User" class="w-6 h-6 rounded-full" loading="lazy" />
+                    <div>
+                        <div class="text-xs text-text-secondary">Alex C.</div>
+                        <div class="text-sm">También Valhalla VintageVerb 🔥</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="p-4 border-t border-border">
+                <div class="flex space-x-2">
+                    <input type="text" placeholder="Escribe un mensaje..." class="flex-1 bg-secondary border border-border rounded px-3 py-2 text-sm" />
+                    <button class="bg-accent text-primary px-4 py-2 rounded">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <svg class="w-10 h-10 text-accent" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4L36 12V28L20 36L4 28V12L20 4Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                            <path d="M14 20H26M20 14V26" stroke="#0A0A0A" stroke-width="2"/>
+                        </svg>
+                        <span class="ml-3 text-xl font-bold text-gradient">BeatForge Studio</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        La comunidad más vibrante de productores de música electrónica donde las ideas se convierten en éxitos globales.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.624 5.367 11.99 11.988 11.99S24.005 18.611 24.005 11.987C24.005 5.367 18.638.001 12.017.001zM12.017 18.4c-3.534 0-6.413-2.879-6.413-6.413s2.879-6.413 6.413-6.413 6.413 2.879 6.413 6.413-2.879 6.413-6.413 6.413z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Community -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Comunidad</h3>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Feed de Actividad</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Colaboraciones</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Desafíos</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Eventos Live</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Soporte</h3>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Centro de Ayuda</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Reglas Comunidad</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Contacto</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Reportar Problema</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-text-secondary text-sm">
+                    © 2025 BeatForge Studio. Todos los derechos reservados.
+                </p>
+                <p class="text-text-secondary text-sm mt-4 md:mt-0">
+                    Conectando productores globalmente ❤️
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Chat toggle functionality
+        document.getElementById('chatToggle').addEventListener('click', function() {
+            const chatWindow = document.getElementById('chatWindow');
+            chatWindow.classList.toggle('hidden');
+        });
+
+        // Dynamic activity feed updates
+        function updateActivityFeed() {
+            // Simulate real-time updates
+            const activities = document.querySelectorAll('.card .text-text-secondary');
+            activities.forEach(activity => {
+                if (activity.textContent.includes('hace')) {
+                    // Update timestamps dynamically
+                }
+            });
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set up real-time features
+            setInterval(updateActivityFeed, 30000); // Update every 30 seconds
+            
+            // Add smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

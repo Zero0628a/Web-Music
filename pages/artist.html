@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artistas - BeatForge Studio</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Conoce a los productores legendarios de BeatForge Studio. Explora sus perfiles, masterclasses exclusivas y contenido detrás de escena." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fbeatforge2473back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 w-full z-50 bg-primary/90 backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-accent" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4L36 12V28L20 36L4 28V12L20 4Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                        <path d="M14 20H26M20 14V26" stroke="#0A0A0A" stroke-width="2"/>
+                    </svg>
+                    <span class="ml-3 text-xl font-bold text-gradient">BeatForge Studio</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-text-primary transition-colors duration-200 px-3 py-2 rounded-md">Inicio</a>
+                        <a href="masterclasses_page.html" class="text-text-secondary hover:text-text-primary transition-colors duration-200 px-3 py-2 rounded-md">Masterclasses</a>
+                        <a href="artists_page.html" class="text-accent font-medium px-3 py-2 rounded-md">Artistas</a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200 px-3 py-2 rounded-md">Comunidad</a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200 px-3 py-2 rounded-md">Recursos</a>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="text-text-secondary hover:text-text-primary transition-colors duration-200">Iniciar Sesión</button>
+                    <button class="btn-primary">Comenzar Gratis</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-text-secondary hover:text-text-primary p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 w-full h-full">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Artists Studio" class="w-full h-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/60 to-transparent"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 h-full flex items-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl">
+                    <div class="mb-6">
+                        <span class="inline-block bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium mb-4">
+                            Maestros del sonido
+                        </span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                        Los <span class="text-gradient">artistas</span> que definen la música electrónica
+                    </h1>
+                    <p class="text-xl md:text-2xl text-text-secondary mb-8 leading-relaxed">
+                        Conoce a los productores legendarios que han forjado el sonido de generaciones y descubre sus secretos creativos.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="btn-primary text-lg px-8 py-4 studio-glow">
+                            Explorar Artistas
+                        </button>
+                        <button class="btn-secondary text-lg px-8 py-4 flex items-center justify-center">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+                            </svg>
+                            Filtrar por Género
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artist Discovery Filters -->
+    <section class="py-8 bg-secondary border-b border-border sticky top-16 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <!-- Search Bar -->
+                <div class="flex-1 max-w-md">
+                    <div class="relative">
+                        <input type="text" placeholder="Buscar artistas..." class="input-field w-full pl-10" />
+                        <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-3">
+                    <select class="input-field">
+                        <option>Todos los Géneros</option>
+                        <option>Trance</option>
+                        <option>Progressive</option>
+                        <option>Techno</option>
+                        <option>Big Room</option>
+                        <option>Deep House</option>
+                    </select>
+                    <select class="input-field">
+                        <option>Sello Discográfico</option>
+                        <option>Armada Music</option>
+                        <option>Spinnin' Records</option>
+                        <option>Anjunabeats</option>
+                        <option>OWSLA</option>
+                    </select>
+                    <select class="input-field">
+                        <option>Actividad</option>
+                        <option>Contenido Nuevo</option>
+                        <option>Masterclasses Activas</option>
+                        <option>Live Sessions</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Artists Masonry Grid -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Maestros del Sonido</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Cada artista trae décadas de experiencia y una visión única del arte de la producción musical
+                </p>
+            </div>
+
+            <!-- Masonry Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Artist Card 1 - Large Featured -->
+                <div class="lg:col-span-2 lg:row-span-2">
+                    <div class="card group cursor-pointer hover:studio-glow transition-all duration-500 h-full relative overflow-hidden">
+                        <div class="absolute inset-0">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop" alt="Armin van Buuren Studio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent group-hover:from-primary/80 transition-all duration-500"></div>
+                        </div>
+                        
+                        <div class="relative z-10 p-8 h-full flex flex-col justify-end">
+                            <div class="absolute top-6 right-6">
+                                <span class="bg-accent text-primary text-xs font-bold px-3 py-1 rounded-full">SPOTLIGHT</span>
+                            </div>
+                            
+                            <div>
+                                <div class="flex items-center mb-4">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=80&auto=format&fit=crop" alt="Armin van Buuren" class="w-16 h-16 rounded-full mr-4 border-2 border-accent" loading="lazy" />
+                                    <div>
+                                        <h3 class="text-3xl font-bold text-white mb-1">Armin van Buuren</h3>
+                                        <div class="flex items-center space-x-4 text-accent text-sm">
+                                            <span>Armada Music</span>
+                                            <span>•</span>
+                                            <span>Trance · Progressive</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-white/90 mb-6 text-lg leading-relaxed">
+                                    Cinco veces #1 DJ del mundo según DJ Mag. Fundador de Armada Music y pionero del trance progresivo. 
+                                    Su programa "A State of Trance" ha definido la cultura trance durante más de dos décadas.
+                                </p>
+                                
+                                <div class="grid grid-cols-3 gap-4 mb-6">
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-accent">23</div>
+                                        <div class="text-sm text-white/70">Años de carrera</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-accent">8</div>
+                                        <div class="text-sm text-white/70">Masterclasses</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-accent">2.1M</div>
+                                        <div class="text-sm text-white/70">Estudiantes</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex space-x-3">
+                                    <button class="flex-1 btn-primary">Ver Perfil Completo</button>
+                                    <button class="btn-secondary px-4">🎵</button>
+                                    <button class="btn-secondary px-4">📱</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist Card 2 -->
+                <div class="card group cursor-pointer hover:electric-glow transition-all duration-300 relative">
+                    <div class="absolute top-4 right-4 z-10">
+                        <span class="bg-success text-primary text-xs font-bold px-3 py-1 rounded-full">ACTIVO</span>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop" alt="Tiësto" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-3 h-3 bg-success rounded-full animate-pulse"></div>
+                                <span class="text-white text-sm font-medium">En vivo ahora</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=60&auto=format&fit=crop" alt="Tiësto" class="w-12 h-12 rounded-full mr-3" loading="lazy" />
+                        <div>
+                            <h3 class="text-xl font-bold">Tiësto</h3>
+                            <div class="text-xs text-text-secondary">Musical Freedom</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4 text-sm">
+                        Leyenda del EDM. Primer DJ en tocar en los Juegos Olímpicos. Maestro de la producción comercial y el big room house.
+                    </p>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3 text-sm">
+                            <span class="text-accent">5 masterclasses</span>
+                            <span class="text-text-secondary">•</span>
+                            <span class="text-success">892 estudiantes</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button class="flex-1 btn-secondary text-sm">Ver Perfil</button>
+                        <button class="btn-secondary text-sm px-3">🎧</button>
+                    </div>
+                </div>
+
+                <!-- Artist Card 3 -->
+                <div class="card group cursor-pointer hover:studio-glow transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=400&auto=format&fit=crop" alt="Deadmau5" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <span class="text-white text-sm font-medium">4.9/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=60&auto=format&fit=crop" alt="Deadmau5" class="w-12 h-12 rounded-full mr-3" loading="lazy" />
+                        <div>
+                            <h3 class="text-xl font-bold">Deadmau5</h3>
+                            <div class="text-xs text-text-secondary">mau5trap</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4 text-sm">
+                        Innovador del progressive house y techno. Conocido por sus sets únicos y técnicas de producción experimentales.
+                    </p>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3 text-sm">
+                            <span class="text-accent">7 masterclasses</span>
+                            <span class="text-text-secondary">•</span>
+                            <span class="text-success">1.2K estudiantes</span>
+                        </div>
+                    </div>
+                    <button class="w-full btn-secondary text-sm">Explorar Contenido</button>
+                </div>
+
+                <!-- Artist Card 4 - Medium Featured -->
+                <div class="lg:col-span-2">
+                    <div class="card group cursor-pointer hover:electric-glow transition-all duration-500 relative overflow-hidden">
+                        <div class="flex flex-col lg:flex-row h-full">
+                            <div class="lg:w-1/2 relative">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=600&auto=format&fit=crop" alt="Above & Beyond Studio" class="w-full h-64 lg:h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                                <div class="absolute inset-0 bg-gradient-to-r from-transparent to-primary/60 lg:bg-gradient-to-r lg:from-transparent lg:to-primary/80"></div>
+                                <div class="absolute top-4 left-4">
+                                    <span class="bg-success text-primary text-xs font-bold px-3 py-1 rounded-full">NUEVA SERIE</span>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/2 p-6 flex flex-col justify-center">
+                                <div class="flex items-center mb-4">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=60&auto=format&fit=crop" alt="Above & Beyond" class="w-12 h-12 rounded-full mr-3" loading="lazy" />
+                                    <div>
+                                        <h3 class="text-2xl font-bold">Above & Beyond</h3>
+                                        <div class="text-sm text-text-secondary">Anjunabeats</div>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary mb-6 leading-relaxed">
+                                    Trío británico que ha redefinido el trance emocional. Sus Group Therapy sessions y el sello Anjunabeats han sido cuna de talentos emergentes.
+                                </p>
+                                <div class="flex items-center space-x-6 mb-6 text-sm">
+                                    <div>
+                                        <span class="text-accent font-bold">6</span>
+                                        <span class="text-text-secondary">masterclasses</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-success font-bold">1.8K</span>
+                                        <span class="text-text-secondary">estudiantes</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-warning font-bold">4.8★</span>
+                                        <span class="text-text-secondary">rating</span>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <button class="btn-primary text-sm px-6 py-2">Ver Serie Completa</button>
+                                    <button class="btn-secondary text-sm px-4">🎵</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist Card 5 -->
+                <div class="card group cursor-pointer hover:studio-glow transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop" alt="Martin Garrix" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="text-white text-sm">
+                                        <span class="font-medium">Animals</span>
+                                        <div class="text-xs opacity-75">Preview disponible</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=60&auto=format&fit=crop" alt="Martin Garrix" class="w-12 h-12 rounded-full mr-3" loading="lazy" />
+                        <div>
+                            <h3 class="text-xl font-bold">Martin Garrix</h3>
+                            <div class="text-xs text-text-secondary">STMPD RCRDS</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4 text-sm">
+                        Prodigio holandés que conquistó el mundo con "Animals". Maestro del future bass y la producción melódica contemporánea.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-text-secondary">Masterclasses activas</span>
+                            <span class="text-accent font-medium">4</span>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-text-secondary">Próximo contenido</span>
+                            <span class="text-success font-medium">2 días</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist Card 6 -->
+                <div class="card group cursor-pointer hover:electric-glow transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=400&auto=format&fit=crop" alt="Carl Cox" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-warning text-primary text-xs font-bold px-3 py-1 rounded-full">LEYENDA</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=60&auto=format&fit=crop" alt="Carl Cox" class="w-12 h-12 rounded-full mr-3" loading="lazy" />
+                        <div>
+                            <h3 class="text-xl font-bold">Carl Cox</h3>
+                            <div class="text-xs text-text-secondary">Intec Digital</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4 text-sm">
+                        Leyenda del techno británico. Más de 30 años definiendo la cultura underground con su energía inigualable y selección musical impecable.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3 text-sm">
+                            <span class="text-accent">3 masterclasses</span>
+                            <span class="text-text-secondary">•</span>
+                            <span class="text-success">567 estudiantes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist Card 7 -->
+                <div class="card group cursor-pointer hover:studio-glow transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=400&auto=format&fit=crop" alt="Skrillex" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="text-white">
+                                <div class="text-sm font-medium mb-1">Colaboración especial</div>
+                                <div class="text-xs opacity-75">con Noisia · Próximamente</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=60&auto=format&fit=crop" alt="Skrillex" class="w-12 h-12 rounded-full mr-3" loading="lazy" />
+                        <div>
+                            <h3 class="text-xl font-bold">Skrillex</h3>
+                            <div class="text-xs text-text-secondary">OWSLA</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4 text-sm">
+                        Revolucionario del dubstep y bass music. Múltiple ganador de Grammy que llevó la música electrónica experimental al mainstream.
+                    </p>
+                    <button class="w-full btn-secondary text-sm">Contenido Exclusivo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artist Spotlight Monthly Feature -->
+    <section class="py-20 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Spotlight del Mes</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Cada mes destacamos a un artista con contenido documental exclusivo y acceso detrás de escena
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-primary to-secondary rounded-2xl overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=800&auto=format&fit=crop" alt="Porter Robinson Documentary" class="w-full h-96 lg:h-full object-cover" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-primary/80"></div>
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-warning text-primary text-sm font-bold px-4 py-2 rounded-full">SPOTLIGHT ENERO</span>
+                        </div>
+                        <div class="absolute bottom-6 left-6 right-6 lg:hidden">
+                            <h3 class="text-3xl font-bold text-white mb-2">Porter Robinson</h3>
+                            <p class="text-white/80">El arquitecto de mundos sonoros emocionales</p>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8 lg:p-12 flex flex-col justify-center">
+                        <div class="hidden lg:block mb-6">
+                            <h3 class="text-4xl font-bold mb-4">Porter Robinson</h3>
+                            <p class="text-xl text-text-secondary">El arquitecto de mundos sonoros emocionales</p>
+                        </div>
+                        
+                        <div class="space-y-6 mb-8">
+                            <p class="text-text-secondary leading-relaxed">
+                                Descubre el proceso creativo detrás de "Nurture", el álbum que redefinió la música electrónica emocional. 
+                                Acceso exclusivo a su estudio personal y las técnicas que han inspirado a una generación completa.
+                            </p>
+                            
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-accent">60min</div>
+                                    <div class="text-sm text-text-secondary">Documental</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-success">45min</div>
+                                    <div class="text-sm text-text-secondary">Entrevista</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-warning">12</div>
+                                    <div class="text-sm text-text-secondary">Tracks analizados</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-medium">Behind the Scenes: Nurture Sessions</div>
+                                    <div class="text-sm text-text-secondary">Acceso completo al proceso creativo</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex space-x-4 mt-6">
+                                <button class="btn-primary flex-1">Ver Documental Completo</button>
+                                <button class="btn-secondary px-6">Playlist 🎵</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Integration -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Conecta con los Maestros</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Sigue a tus artistas favoritos y mantente al día con sus últimas creaciones y actualizaciones en tiempo real
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Social Feed Card 1 -->
+                <div class="card hover:studio-glow transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=40&auto=format&fit=crop" alt="Armin van Buuren" class="w-10 h-10 rounded-full mr-3" loading="lazy" />
+                            <div>
+                                <div class="font-medium text-sm">@arminvanbuuren</div>
+                                <div class="text-xs text-text-secondary">hace 2h</div>
+                            </div>
+                        </div>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </div>
+                    <p class="text-sm text-text-secondary mb-3">
+                        Working on something special in the studio today. The energy is incredible! 🎛️ #ASOT #NewMusic
+                    </p>
+                    <div class="flex items-center justify-between text-xs text-text-secondary">
+                        <span>1.2K likes</span>
+                        <span>89 comments</span>
+                    </div>
+                </div>
+
+                <!-- Social Feed Card 2 -->
+                <div class="card hover:electric-glow transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=40&auto=format&fit=crop" alt="Tiësto" class="w-10 h-10 rounded-full mr-3" loading="lazy" />
+                            <div>
+                                <div class="font-medium text-sm">@tiesto</div>
+                                <div class="text-xs text-text-secondary">hace 4h</div>
+                            </div>
+                        </div>
+                        <div class="w-5 h-5 bg-gradient-to-r from-purple-400 to-pink-400 rounded"></div>
+                    </div>
+                    <div class="aspect-square bg-surface rounded-lg mb-3 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                    <p class="text-sm text-text-secondary mb-3">
+                        New masterclass preview is live! Check out these production secrets 🔥
+                    </p>
+                    <div class="flex items-center justify-between text-xs text-text-secondary">
+                        <span>2.8K likes</span>
+                        <span>156 comments</span>
+                    </div>
+                </div>
+
+                <!-- Social Feed Card 3 -->
+                <div class="card hover:studio-glow transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=40&auto=format&fit=crop" alt="Deadmau5" class="w-10 h-10 rounded-full mr-3" loading="lazy" />
+                            <div>
+                                <div class="font-medium text-sm">@deadmau5</div>
+                                <div class="text-xs text-text-secondary">hace 6h</div>
+                            </div>
+                        </div>
+                        <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                        </svg>
+                    </div>
+                    <p class="text-sm text-text-secondary mb-3">
+                        Live stream from the cube tonight at 8PM EST. Bringing some unreleased progressive house vibes 🎹
+                    </p>
+                    <div class="flex items-center justify-between text-xs text-text-secondary">
+                        <span>892 likes</span>
+                        <span>67 comments</span>
+                    </div>
+                </div>
+
+                <!-- Social Feed Card 4 -->
+                <div class="card hover:electric-glow transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=40&auto=format&fit=crop" alt="Martin Garrix" class="w-10 h-10 rounded-full mr-3" loading="lazy" />
+                            <div>
+                                <div class="font-medium text-sm">@martingarrix</div>
+                                <div class="text-xs text-text-secondary">hace 1d</div>
+                            </div>
+                        </div>
+                        <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.84-.179-.84-.599 0-.36.24-.66.6-.78 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.78.182 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.48.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
+                        </svg>
+                    </div>
+                    <p class="text-sm text-text-secondary mb-3">
+                        Just dropped "Sentio" on Spotify! This one's been 2 years in the making. Hope you love it as much as I do ❤️
+                    </p>
+                    <div class="flex items-center justify-between text-xs text-text-secondary">
+                        <span>5.2K likes</span>
+                        <span>342 comments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <svg class="w-10 h-10 text-accent" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4L36 12V28L20 36L4 28V12L20 4Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                            <path d="M14 20H26M20 14V26" stroke="#0A0A0A" stroke-width="2"/>
+                        </svg>
+                        <span class="ml-3 text-xl font-bold text-gradient">BeatForge Studio</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        La plataforma definitiva para productores serios que buscan transformar su pasión en maestría profesional.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Plataforma</h3>
+                    <ul class="space-y-2">
+                        <li><a href="masterclasses_page.html" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Masterclasses</a></li>
+                        <li><a href="artists_page.html" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Artistas</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Comunidad</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Recursos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Soporte</h3>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Centro de Ayuda</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Contacto</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Términos</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-text-primary transition-colors duration-200">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-text-secondary text-sm">
+                    © 2025 BeatForge Studio. Todos los derechos reservados.
+                </p>
+                <p class="text-text-secondary text-sm mt-4 md:mt-0">
+                    Hecho con ❤️ para la comunidad de productores
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Masonry grid height adjustment
+            const grid = document.querySelector('.grid');
+            
+            // Smooth hover animations
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-4px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Social media integration simulation
+            const socialCards = document.querySelectorAll('.card');
+            socialCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Simulate social interaction
+                    const likeSpan = this.querySelector('span');
+                    if (likeSpan && likeSpan.textContent.includes('likes')) {
+                        // Add slight animation feedback
+                        card.style.transform = 'scale(0.98)';
+                        setTimeout(() => {
+                            card.style.transform = 'scale(1)';
+                        }, 150);
+                    }
+                });
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
