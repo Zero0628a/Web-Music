@@ -1,0 +1,58 @@
+.benefits-hero {
+  padding: 8rem 0 3rem;
+  text-align: center;
+  background: var(--dark-bg);
+}
+
+.benefits-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.benefits-hero p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.benefits-list {
+  padding: 4rem 0;
+  background: var(--dark-card);
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  background: var(--dark-secondary);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid var(--dark-secondary);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  border-color: var(--primary-orange);
+  transform: translateY(-5px);
+}
+
+.benefit-card i {
+  font-size: 2rem;
+  color: var(--primary-orange);
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}

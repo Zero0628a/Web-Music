@@ -1,0 +1,121 @@
+.masterclass-hero {
+  padding: 8rem 0 3rem;
+  background: var(--dark-bg);
+  text-align: center;
+}
+
+.masterclass-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.masterclass-hero p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.masterclass-list {
+  padding: 4rem 0;
+  background: var(--dark-card);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.masterclass-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+.masterclass-card {
+  background: var(--dark-secondary);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--dark-secondary);
+  transition: transform 0.3s ease;
+}
+
+.masterclass-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-orange);
+}
+
+.masterclass-image {
+  height: 200px;
+  background: var(--gradient-secondary);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.masterclass-image .play-icon {
+  font-size: 2.5rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.masterclass-image .tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--primary-orange);
+  color: white;
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.masterclass-image .tag.on-demand {
+  background: var(--accent-cyan);
+}
+
+.masterclass-image .tag.tour {
+  background: #ffd700;
+  color: black;
+}
+
+.masterclass-content {
+  padding: 1.5rem;
+}
+
+.masterclass-content h3 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.masterclass-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.details {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--primary-orange);
+  margin-bottom: 1rem;
+}
+
+.btn-primary.small,
+.btn-secondary.small {
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  border-radius: 25px;
+}
